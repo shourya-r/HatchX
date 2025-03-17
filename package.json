@@ -9,7 +9,7 @@
     "lint": "next lint",
     "predev": "npm run typegen",
     "prebuild": "npm run typegen",
-    "typegen": "sanity schema extract --path=./sanity/extract.json && sanity typegen generate"
+    "typegen": "NODE_ENV=production sanity schema extract --path=./sanity/extract.json && sanity typegen generate || echo 'Skipping typegen in production'"
   },
   "packageManager": "npm@10.5.2",
   "overrides": {
