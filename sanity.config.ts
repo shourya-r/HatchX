@@ -1,3 +1,4 @@
+"use client";
 /**
  * This configuration is used to for the Sanity Studio that’s mounted on the `/app/studio/[[...tool]]/page.tsx` route
  */
@@ -22,7 +23,7 @@ export default defineConfig({
     structureTool({ structure }),
     // Vision is for querying with GROQ from inside the Studio
     // https://www.sanity.io/docs/the-vision-plugin
-    visionTool({ defaultApiVersion: apiVersion }),
+    //visionTool({ defaultApiVersion: apiVersion }),
     markdownSchema(),
   ],
 });
